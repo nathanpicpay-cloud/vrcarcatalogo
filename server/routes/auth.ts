@@ -1,6 +1,5 @@
 import express from 'express';
 import bcrypt from 'bcryptjs';
-import jwt from 'jwt-simple'; // wait, I installed jsonwebtoken, let's use that
 import { dbGet } from '../db';
 import * as baseJwt from 'jsonwebtoken';
 

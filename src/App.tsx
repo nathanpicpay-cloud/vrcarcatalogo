@@ -5,7 +5,7 @@
 
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { useAuthStore } from './store/useAuthStore';
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 
 // Placeholders for views
 import CatalogLayout from './layouts/CatalogLayout';
@@ -14,6 +14,7 @@ import CatalogHome from './pages/catalog/CatalogHome';
 import Login from './pages/auth/Login';
 import Dashboard from './pages/admin/Dashboard';
 import ProductsList from './pages/admin/products/ProductsList';
+import ImportPDF from './pages/admin/imports/ImportPDF';
 
 function ProtectedRoute({ children }: { children: React.ReactNode }) {
   const { isAuthenticated } = useAuthStore();
@@ -50,6 +51,7 @@ export default function App() {
         >
           <Route index element={<Dashboard />} />
           <Route path="products" element={<ProductsList />} />
+          <Route path="imports" element={<ImportPDF />} />
         </Route>
       </Routes>
     </BrowserRouter>

@@ -30,6 +30,9 @@ export default function AdminLayout() {
           <Link to="/admin/products" className="flex items-center gap-3 px-4 py-3 text-zinc-400 hover:text-white transition-colors">
             <Package size={20} className="opacity-60" /> <span className="text-sm font-medium">Produtos</span>
           </Link>
+          <Link to="/admin/imports" className="flex items-center gap-3 px-4 py-3 text-zinc-400 hover:text-white transition-colors">
+            <FileText size={20} className="opacity-60" /> <span className="text-sm font-medium">Importar Catálogo (PDF)</span>
+          </Link>
           <Link to="/admin/budgets" className="flex items-center gap-3 px-4 py-3 text-zinc-400 hover:text-white transition-colors">
             <FileText size={20} className="opacity-60" /> <span className="text-sm font-medium">Orçamentos</span>
           </Link>

@@ -6,6 +6,7 @@ import fs from 'fs';
 import { initDb } from './server/db';
 import authRoutes from './server/routes/auth';
 import productsRoutes from './server/routes/products';
+import importsRoutes from './server/routes/imports';
 import { createServer as createViteServer } from 'vite';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -31,6 +32,7 @@ async function startServer() {
   app.get('/api/health', (req, res) => res.json({ status: 'ok' }));
   app.use('/api/auth', authRoutes);
   app.use('/api/products', productsRoutes);
+  app.use('/api/imports', importsRoutes);
 
   // Vite Middleware for development
   if (process.env.NODE_ENV !== 'production') {

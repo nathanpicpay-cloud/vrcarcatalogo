@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Package, Plus, Search, Edit2, Trash2 } from 'lucide-react';
-import { Product } from '../../types';
+import { Product } from '../../../types';
 
 export default function ProductsList() {
   const [products, setProducts] = useState<Product[]>([]);
