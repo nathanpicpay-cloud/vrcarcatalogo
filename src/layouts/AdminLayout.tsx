@@ -74,11 +74,10 @@ export default function AdminLayout() {
           <Outlet />
         </main>
 
-        <footer className="h-12 border-t border-white/10 px-8 flex flex-shrink-0 items-center justify-between text-[10px] text-zinc-500 font-mono tracking-tighter bg-black/20 z-10">
-          <div>VER: 1.0.4-PREMIUM-STABLE</div>
+        <footer className="h-12 border-t border-white/10 px-8 flex flex-shrink-0 items-center justify-between text-xs text-zinc-500 bg-black/20 z-10">
+          <div>VR Car Acessórios &copy; 2026</div>
           <div className="flex items-center gap-4">
-            <span className="text-[#C00000]">● SYSTEM STATUS: OPTIMAL</span>
-            <span className="opacity-50">DATABASE: SQLITE-LOCAL-ENCRYPTED</span>
+            Painel Administrativo
           </div>
         </footer>
       </div>
